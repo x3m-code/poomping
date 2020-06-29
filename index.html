@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+        display: none
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+            <a href="#products" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCTS</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Extras</a>
+                    <a href="#" class="w3-bar-item w3-button">Media</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                    class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+        <a href="#products" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PRODUCTS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/header1.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Large Selection</h3>
+                <p><b>A mask for every occasion!</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/header2.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Kid's Sizes</h3>
+                <p><b>Large selection of kid friendly patterns</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/header3.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Tough Guy</h3>
+                <p><b>We got something for you too.</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/header4.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Cool Girl</h3>
+                <p><b>A mask to go with every pair of your shoes.</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="/images/header5.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Home Made</h3>
+                <p><b>High quality home made masks made with love.</b></p>
+            </div>
+        </div>        
+
+        <!-- The About Section -->
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+            <h2 class="w3-wide">ABOUT US</h2>
+            <p class="w3-opacity"><i>We love to create</i></p>
+            <p class="w3-justify">Write about us.</p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/images/member.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
+                        style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/images/member.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
+                        style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <p>Name</p>
+                    <img src="/images/member.jpg" class="w3-round" alt="Random Name" style="width:60%">
+                </div>
+            </div>
+        </div>
+
+        <!-- The Products Section -->
+        <div class="w3-black" id="products">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">PRODUCTS</h2>
+                <p class="w3-opacity w3-center"><i>Get you merchendise!</i></p><br>
+
+                <ul class="w3-ul w3-border w3-white w3-text-grey">
+                    <li class="w3-padding">Masks <span class="w3-tag w3-red w3-right w3-margin-right">2 week wait time</span></li>
+                    <li class="w3-padding">Scrub Caps <span class="w3-tag w3-red w3-right w3-margin-right">2 week wait time</span></li>
+                </ul>
+
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="/images/masks.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Masks</b></p>
+                            <p class="w3-opacity">Home Made</p>
+                            <p>Large selection of home made masks.</p>
+                            <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeHk2bGReqy9Vx-pHd7zDA7ShSGzrDXqG4eg4BPLqaLHF7pRA/viewform'">Buy Mask</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="/images/scrub_caps.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Scrub Caps</b></p>
+                            <p class="w3-opacity">Home Made</p>
+                            <p>Large selection of home made scrub caps.</p>
+                            <button class="w3-button w3-black w3-margin-bottom"
+                                onclick="window.location.href=''">Buy Scrub Cap</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Contact Section -->
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center">CONTACT</h2>
+            <p class="w3-opacity w3-center"><i>Let us know!</i></p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Ontario, Canada<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: (416) 219-8057<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: poomping2020@gmail.com<br>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="/images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <a class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/Poomping2020"></a>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">©2020 Poomping
+        </p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
